@@ -13,7 +13,7 @@ int main(){
     char letra = 'A';
     char string[] = "Hola que tal todo";
 
-    /* Con nuestras variables listas para poder verlas en la terminal tenemos que utilizar la funcion  
+    /* Con nuestras variables listas, para poder verlas en la terminal tenemos que utilizar la función  
     |
     |---> printf() 
     
@@ -36,5 +36,8 @@ int main(){
     printf("Este es un dato del tipo char: %c\n", letra);
     printf("Este es un dato del tipo string: %s\n", string);
 
+    // Tambien puedes notar que agregué  "\n" al final de cada printf, esto es para marcar un salto de linea
+    // así evitamos que se imprima todo junto entre un printf al otro.
+    
     return 0;
 }
