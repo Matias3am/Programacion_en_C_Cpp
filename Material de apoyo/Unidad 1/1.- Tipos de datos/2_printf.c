@@ -7,11 +7,11 @@
 */
 
 int main(){
-    // Tomemos de ejemplo los tipos de datos : Int , Float , un Char y un String
+    // Tomemos de ejemplo los tipos de datos : Int , Float , un Char y una cadena de Chars
     int entero = 4;
     float decimal = 4.15;
     char letra = 'A';
-    char string[] = "Hola que tal todo";
+    char cadena[] = "Hola que tal todo";
 
     /* Con nuestras variables listas, para poder verlas en la terminal tenemos que utilizar la función  
     |
@@ -34,7 +34,7 @@ int main(){
     printf("Este es un dato del tipo entero: %d\n", entero);
     printf("Este es un dato del tipo flotante: %f\n", decimal);
     printf("Este es un dato del tipo char: %c\n", letra);
-    printf("Este es un dato del tipo string: %s\n", string);
+    printf("Este es un dato del tipo string: %s\n", cadena);
 
     // Tambien puedes notar que agregué  "\n" al final de cada printf, esto es para marcar un salto de linea
     // así evitamos que se imprima todo junto entre un printf al otro.
