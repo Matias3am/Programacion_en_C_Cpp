@@ -7,7 +7,7 @@ graph TD;
     A{Algunos tipos de Datos}-->B{Entero : Int};
     A{Algunos tipos de Datos}-->C{Flotante : Float};
     A{Algunos tipos de Datos}-->D{Caracter : Char};
-    A{Algunos tipos de Datos}-->E{String : Secuencia de chars};
+    A{Algunos tipos de Datos}-->E{Cadena de caracteres : Secuencia de chars};
 ```
 
 Cada uno de estos datos presenta un rango de valor y peso en bytes que puede abarcar la variable, esto se puede observar en la siguiente tabla de referencia: 
