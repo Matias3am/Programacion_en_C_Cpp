@@ -6,7 +6,7 @@ int main(){
     int entero = 4; // Variable de tipo "Int" o entero
     float decimal = 3.16; // Variable del tipo "Float" o decimal
     char letra = 'A'; // Variable del tipo "Char" o un caracter en especifico 
-    char cadena_de_texto[] = "Esta es una cadena"; // Variable del tipo "String", que son valores cuando tenemos más de 1 caracter
+    char cadena_de_texto[] = "Esta es una cadena"; // Variable del tipo "Arreglo de caracteres" , que son variables con más de 1 caracter
     int *puntero; // Variable del tipo puntero los cuales "apuntan" a un espacio de memoria
     return 0;
 }
