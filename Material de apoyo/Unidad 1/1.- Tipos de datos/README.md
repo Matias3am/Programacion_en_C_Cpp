@@ -10,6 +10,6 @@ graph TD;
     A{Algunos tipos de Datos}-->E{String : Secuencia de chars};
 ```
 
-Cada uno de estos datos presenta un rango y peso en bytes que puede abarcar la variable, esto se puede analizar en la siguiente tabla: 
+Cada uno de estos datos presenta un rango de valor y peso en bytes que puede abarcar la variable, esto se puede observar en la siguiente tabla de referencia: 
 
 ![](https://github.com/Matias3am/Programacion_en_C_Cpp/blob/main/Imagenes/tama%C3%B1o_tipos_de_datos.png)
