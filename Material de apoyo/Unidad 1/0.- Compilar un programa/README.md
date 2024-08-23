@@ -83,7 +83,8 @@ Y VOAAALAAA!!!! , tenemos nuestro poderosisimo hola mundo:
 
 ![](https://github.com/Matias3am/Programacion_en_C_Cpp/blob/main/Imagenes/hola_mundo5.png)
 
-Para c++ el codigo seria: 
+## Ejemplo en c++
+Los pasos son casi los mismos, solo que tenemos que crear un archivo base.cpp o .c++ en VsCode, en este caso el codigo seria: 
 
 ```cpp
 #include <iostream>
