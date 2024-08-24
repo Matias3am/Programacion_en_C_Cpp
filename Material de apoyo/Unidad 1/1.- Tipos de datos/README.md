@@ -1,6 +1,6 @@
 # Tamaño de los datos
 
-Es importante antes de empezar a programar que existen diversos tipos de datos, tenemos valores enteros, decimales, caracteres únicos o lineas de texto que pueden ser bien extensas.
+Es importante antes de empezar a programar que existen diversos tipos de datos.
 
 ```mermaid
 graph TD;
