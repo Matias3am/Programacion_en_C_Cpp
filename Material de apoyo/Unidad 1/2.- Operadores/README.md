@@ -10,7 +10,7 @@
 ```
 
 Si no entiendes el módulo, este es simplemente el resto que queda al realizar una división, 
-por ejemplo si dividimos 6 / 4 , sabemos que cabe 1 vez y nos quedaria un 2 de sobra,este valor de sobra correspondería al modulo o resto de una división
+por ejemplo si dividimos 6 / 4 , sabemos que cabe 1 vez y nos quedaria un 2 de sobra, este valor de sobra correspondería al modulo o resto de una división
 
 ![](https://github.com/Matias3am/Programacion_en_C_Cpp/blob/main/Imagenes/modulo.png)
 
@@ -102,4 +102,107 @@ El valor de valor1 despues de incrementar es: 6
 El valor de valor2 despues de incrementar es: 5
 El valor de valor1 despues de disminuir es: 5
 El valor de valor2 despues de disminuir es: 4
+```
+
+## 3) Operaciones relacionales
+
+Este tipo de operaciones comparan 2 operandos
+
+```
+== Igualdad (revisa si dos operandos son iguales).
+!= Distinto (revisa si dos operandos son distintos).
+> Mayor que
+< Menor que
+>= Mayor o igual que
+<= Menor o igual que
+
+```
+## 3.1) Ejemplos en código
+
+```c
+#include <stdio.h>
+
+int main(){
+
+    int a = 5;
+    int b = 4;
+
+    char *resultado = (b==a) ? "True" : "False";
+    char *resultado2 = (b!=a) ? "True" : "False";
+    char *resultado3 = (b>a) ? "True" : "False";
+    char *resultado4 = (b>=a) ? "True" : "False";
+    char *resultado5 = (b<a) ? "True" : "False";
+    char *resultado6 = (b<=a) ? "True" : "False";
+
+    printf("La relación 1 es : %s\n", resultado);
+    printf("La relación 2 es : %s\n", resultado2);
+    printf("La relación 3 es : %s\n", resultado3);
+    printf("La relación 4 es : %s\n", resultado4);
+    printf("La relación 5 es : %s\n", resultado5);
+    printf("La relación 6 es : %s\n", resultado6);
+
+    return 0 ; 
+}
+```
+
+Salida del código es: 
+
+```
+La relación 1 es : False
+La relación 2 es : True
+La relación 3 es : False
+La relación 4 es : False
+La relación 5 es : True
+La relación 6 es : True
+```
+
+Si te diste cuenta, ocupe la expresión (?), esta expresión cumple el mismo rol que un condicional if/else, si se cumple la condición que uno escribe entre parentesis entonces retorna el primer valor que uno defina como salida, en caso contrario si uno define una condición y no se cumple, entonces se asigna el segundo
+valor
+
+![](https://github.com/Matias3am/Programacion_en_C_Cpp/blob/main/Imagenes/relacion.png)
+
+## 4) Operaciones de asignacion
+
+```
+----> Caso 1
+valor1 = valor1 [Operador] valor2;
+
+----> Caso 2
+valor1 [Operador] = valor2;
+```
+
+## 4.1) Ejemplos en codigo
+
+```c
+#include <stdio.h>
+
+int main(){
+
+    int a = 5;
+    int b = 4;
+    int c = 5;
+
+    printf("El valor de 'a' antes de modificarlo es: %d\n", a);
+
+    a = a+b;
+
+    printf("El valor de 'a' despues de modificarlo es: %d\n", a);
+    printf("El valor de 'c' antes de modificarlo es: %d\n", c);
+
+    // Esto es lo mismo que decir c = c + b
+    c += b;
+
+    printf("El valor de 'c' despues de modificarlo es: %d\n", c);
+
+    return 0;
+}
+```
+
+salida del codigo es: 
+
+```
+El valor de 'a' antes de modificarlo es: 5
+El valor de 'a' despues de modificarlo es: 9
+El valor de 'c' antes de modificarlo es: 5
+El valor de 'c' despues de modificarlo es: 9
 ```
