@@ -41,6 +41,8 @@ int main(){
     printf("La multiplicación de ambos valores es:  %d\n", multiplicacion);
     printf("La división de ambos valores es:  %f\n", division);
     printf("El resto de ambos valores es:  %d\n", resto);
+
+    return 0;
 }
 ```
 
