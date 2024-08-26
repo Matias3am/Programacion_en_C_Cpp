@@ -41,7 +41,7 @@ Entrando en Path veremos varios archivos, entonces tenemos que bajar a alguno de
 
 ![](https://github.com/Matias3am/Programacion_en_C_Cpp/blob/main/Imagenes/sourceforge_8.png)
 
-Luego le das a aceptar a las ventanas para que se vayan cerrando y a la ultima le das aplicar y aceptar.
+Luego le das a aceptar a  todas las ventanas para que se vayan cerrando.
 
 Con esto ya deberías tener el compilador listo en tu computador. 
 
