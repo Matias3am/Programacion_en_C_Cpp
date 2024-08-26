@@ -64,9 +64,9 @@ En el código anterior nótese el espacio en:
 
 Esto es debido al orden en que realizamos los scanf() y también porque en C existe un caracter oculto que está intrinsico en cada mensaje que es un "\0" 
 Este caracter marca el final de una cadena o un espacio, por eso siempre que definamos un caracter tenemos que considerar el n+1 
-siendo n el total de letras o valores que tendrá el char y 1 extra para el caracter intrínsico que tiene C 
+siendo n el total de letras o valores que tendrá el char y 1 extra para el caracter intrínsico que tiene C.
 
-En el ejemplo, para que se pudiese realizar bien la lectura del char tuve que darle ese espacio, pero si el codigo fues como aparecerá abajo realizando la lectura del char primero, no habría ningun problema, te invito a probar ambas versiones jugando con el espacio en el scanf() del char.
+En el ejemplo, para que se pudiese realizar bien la lectura del char tuve que darle ese espacio, pero si el codigo fuese como aparecerá abajo realizando la lectura del char primero, no habría ningun problema, te invito a probar ambas versiones jugando con el espacio en el scanf() del char.
 
 ```c
 #include <stdio.h> 
@@ -94,7 +94,7 @@ int main(){
 ```
 
 ## 1.2) Ingreso de multiples variables con scanf()
-No solamente puedes ingresar 1 solo valor con scanf(), si no que puedes hacerlo con multiples variables separados por un espacio
+No solamente puedes ingresar 1 solo valor con scanf(), si no que puedes hacerlo con multiples variables separados por un espacio.
 
 ## 1.2.1) Ejemplo en código
 
@@ -132,7 +132,7 @@ La sintaxis de la función es:
   fgets(texto,80,stdin);
 ```
 
-En donde primero tenemos que definir una cadena de caracteres con un tamaño cualquiera sea nuestro interés. El primer valor de fgets() corresponde al nombre de la variable, el segundo al tamaño y stdin significa que el texto ingresado será a traves del teclado 
+En donde primero tenemos que definir una cadena de caracteres con un tamaño cualquiera sea nuestro interés. El primer valor de fgets() corresponde al nombre de la variable, el segundo al tamaño y stdin significa que el texto ingresado será a traves del teclado.
 
 
 ## 2.1) Ejemplo en código
