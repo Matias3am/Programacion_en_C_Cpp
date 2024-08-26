@@ -6,11 +6,11 @@ Generalmente la estructura que siguen los bucles es la siguiente:
 ```mermaid
 graph TD;
     A[Estado inicial]-->B[Condicion];
-    B-->D[¿ Se cumple la condicion ?];
+    B-->D[¿ Se cumple la condición ?];
     D-->E[Si];
     D-->F[No];
-    F-->G[Fin del bucle];
-    E-->H[Accion a ejecutar];
+    F-->G[Fín del bucle];
+    E-->H[Acción a ejecutar];
     H-->I[Siguiente ciclo];
     I-->D;
 
@@ -20,12 +20,12 @@ graph TD;
 # 1) Bucle for
 El bucle "for" generalmente se utiliza cuando uno conoce el rango de acción de la tarea que quiere ejecutar.
 
-Este bucle esta dividido en 3 partes muy importantes que serian: 
-* **Inicialización** : Esta parte es donde se define en que punto empieza el ciclo / bucle.
-* **Condición** : Aqui se marcan las reglas en las que se basará el bucle, si se cumple la regla pasará a la siguiente acción, en caso contrario se romperá el ciclo.
+Este bucle al igual que los otros, está dividido en 3 partes muy importantes que serían: 
+* **Inicialización** : Esta parte es donde se define en qué punto empieza el ciclo / bucle.
+* **Condición** : Aquí se marcan las reglas en las que se basará el bucle, si se cumple la regla pasará a la siguiente acción, en caso contrario se romperá el ciclo.
 * **Incremento / Decremento** : Esto marca una actualización en la variable de control, sin esto el bucle entraría en un loop infinito.
 
-en código el bucle for se vería así: 
+En código el bucle for se vería así: 
 
 ```c
 for(inicialización;condición;incremento/decremento){
@@ -245,7 +245,7 @@ Dentro de los ciclos también podemos realizar excepciones en el caso de que hay
 ## 4.1) Break 
 La función de "break" como bien lo dice su nombre es el de "romper" el bucle, imaginemos que queremos realizar un ciclo "for" en un rango de valores de interes,
  pero que si el valor que estamos iterando llegase a alcanzar cierto numero, eso podria darnos problemas a nuestro código, en este tipo de casos lo ideal sería 
- terminal el ciclo para evitar cualquier error.
+ terminar el ciclo para evitar cualquier error.
 
  ## 4.1.1) Ejemplos en código
 ```c
@@ -284,7 +284,7 @@ El valor de i llego a 7, cerrando el bucle
 Fin del bucle
 ```
 
-En el código de arriba el "i" debió haber recorrido todos los valores desde el 0 al 10, pero como nosostros indicamos el condicional que si el valor fuese 7 en algún punto se rompiese el ciclo, el bucle llegó hasta esa instancia y terminó.
+En el código de arriba el "i" debió haber recorrido todos los valores desde el 0 al 9, pero como nosostros indicamos el condicional que si el valor fuese 7 en algún punto se rompiese el ciclo, el bucle llegó hasta esa instancia y terminó.
 
 
 Otro ejemplo
@@ -328,7 +328,7 @@ Fin del bucle
 
  ## 4.2) Continue
 
- A diferencia de "break" lo que hace a "continue" especial es que en vez de romper y finalizar el ciclo, este se salta la instancia que nosotros definimos y pasa a la siguiente sin iterar en el valor.
+ A diferencia de "break" lo que hace a "continue" especial es que en vez de romper y finalizar el ciclo, este se salta la instancia que nosotros definimos y pasa al siguiente ciclo sin iterar en el valor que decidimos pasar por alto.
 
  ## 4.2.1) Ejemplos en código
  
