@@ -99,6 +99,6 @@ int main(){
 y para compilar el programa en la terminal usariamos: 
 
 ```
-g++ "nombre de nuestro programa".c -o "nombre que le queremos dar al ejecutable".exe
+g++ "nombre de nuestro programa".(cpp o c++) -o "nombre que le queremos dar al ejecutable".exe
 ./"nombre del ejecutable".exe
 ```
