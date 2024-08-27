@@ -48,7 +48,7 @@ int main(){
 ```
 
 
-La salida de del código sería el siguiente 
+La salida de del código sería el siguiente:
 
 ```
 La suma de ambos valores es:  9
@@ -66,7 +66,7 @@ El resto de ambos valores es:  1
 ```
 ## 2.1) Ejemplos en código
 
-En este ejemplo tomaremos los mismos valores enteros que antes 
+En este ejemplo tomaremos los mismos valores enteros que antes: 
 ```C
 #include <stdio.h>
 
@@ -157,7 +157,7 @@ La relación 5 es : True
 La relación 6 es : True
 ```
 
-Si te diste cuenta, ocupe la expresión (?), esta expresión cumple el mismo rol que un condicional if/else, si se cumple la condición que uno escribe entre parentesis entonces retorna el primer valor que uno defina como salida, en caso contrario si uno define una condición y no se cumple, entonces se asigna el segundo
+Si te diste cuenta, ocupé la expresión (?), esta expresión cumple el mismo rol que un condicional if/else (Está explicado en el siguiente inciso) , si se cumple la condición que uno escribe entre parentesis entonces retorna el primer valor que uno defina como salida, en caso contrario si uno define una condición y no se cumple, entonces se asigna el segundo
 valor
 
 ![](https://github.com/Matias3am/Programacion_en_C_Cpp/blob/main/Imagenes/relacion.png)
@@ -226,7 +226,7 @@ El valor 5 es distinto que el valor 4
 ```
 
 ## 3.2.3) Condicional "else"
-Este condicional generalmente va de la mano con la sentencia **"if"** e indica que si el primer condicional no se cumple, entonces realizara lo que se defina dentro del else para cualquiera de los demas casos que no sean el del **"if"**.
+Este condicional generalmente va de la mano con la sentencia **"if"** e indica que si el primer condicional no se cumple, entonces realizará lo que se defina dentro del "else" para cualquiera de los demás casos que no sean el del **"if"**.
 
 Su estructura es la siguiente:
 ```c
@@ -259,15 +259,15 @@ int main(){
 }
 ```
 
-Salida del codigo
+Salida del código:
 
 ```
 El valor 5 y el valor 5 son iguales
 ```
 
-Aqui podemos ver que el primer condicional no se cumplio ya que ambos valores son iguales, por eso la salida que se ejecuto fue la del "else"
+Aquí podemos ver que el primer condicional no se cumplió ya que ambos valores son iguales, por eso la salida que se ejecutó fue la del "else"
 
-Otro ejemplo
+Otro ejemplo:
 
 ```c
 #include <stdio.h>
@@ -288,7 +288,7 @@ int main(){
 }
 ```
 
-Salida del codigo
+Salida del código:
 
 ```
 El valor 5 es mayor que el valor 4
@@ -296,7 +296,7 @@ El valor 5 es mayor que el valor 4
 
 ## 3.2.5) Condicional "else if"
 
-La sentencia "else if" también es de aquellas que van a la par de la sentencia "if" y "else", lo que hace esta sentencia es definir otro condicional que tambien puede encarcelar los casos que estamos estudiando, la sintaxis del condiciones "else if" en código es así:
+La sentencia "else if" también es de aquellas que van a la par de la sentencia "if" y "else", lo que hace esta sentencia es definir otro condicional que también puede encarcelar los casos que estamos estudiando, la sintaxis del condiciones "else if" en código es así:
 
 ```c
 if (condicion 1) {
@@ -334,7 +334,7 @@ int main(){
 }
 ```
 
-Salida del código
+Salida del código:
 
 ```
 El valor 5 es mayor que el valor 4
@@ -342,7 +342,7 @@ El valor 5 es mayor que el valor 4
 
 Podemos ver en el código de arriba que no se cumplió ni el condicional del "if" ni el del "else, pero si el del "else if", por eso se ejecutó ese bloque en específico.
 
-Otro ejemplo
+Otro ejemplo:
 
 ```c
 #include <stdio.h>
@@ -366,7 +366,7 @@ int main(){
 }
 ```
 
-Salida del código
+Salida del código:
 
 ```
 El valor -25 es menor que el valor 5
@@ -381,7 +381,7 @@ La sintaxis de este condicional es el siguiente:
 ```c
 int variable = 3 // por ejemplo
 
-switch (variable) { // Acá decimos que queremos evaluar variable en los distintos casos
+switch (variable) { // Acá decimos que queremos evaluar "variable" en los distintos casos
     case 1:  // Cuando variable valga 1 se hace lo de abajo
         // Bloque de código 1
     case 2:  // Cuando variable valga 2 se hace lo de abajo
@@ -470,7 +470,7 @@ Salida del código
 El dia 5 es viernes
 ```
 
-# 4) Operaciones de asignacion
+# 4) Operaciones de asignación
 
 ```
 ----> Caso 1
@@ -507,7 +507,7 @@ int main(){
 }
 ```
 
-salida del codigo es: 
+La salida del codigo es: 
 
 ```
 El valor de 'a' antes de modificarlo es: 5
