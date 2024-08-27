@@ -296,13 +296,179 @@ El valor 5 es mayor que el valor 4
 
 ## 3.2.5) Condicional "else if"
 
+La sentencia "else if" también es de aquellas que van a la par de la sentencia "if" y "else", lo que hace esta sentencia es definir otro condicional que tambien puede encarcelar los casos que estamos estudiando, la sintaxis del condiciones "else if" en código es así:
+
+```c
+if (condicion 1) {
+    // Bloque de código 1
+}
+else if (condicion 2) {
+    // Bloque de código 2
+}
+else {
+    // Bloque de código 3
+}
+```
+
 ## 3.2.6) Ejemplos en codigo 
+
+```c
+#include <stdio.h>
+
+int main(){
+    
+    int valor1 = 5;
+    int valor2 = 4;
+
+    if (valor1 < valor2){
+        printf("El valor %d es menor que el valor %d", valor1,valor2);
+    }
+    else if (valor1 > valor2){
+        printf("El valor %d es mayor que el valor %d", valor1, valor2);
+    }
+    else {
+        printf("El valor %d y %d son iguales", valor1, valor2);
+    }
+
+    return 0;
+}
+```
+
+Salida del código
+
+```
+El valor 5 es mayor que el valor 4
+```
+
+Podemos ver en el código de arriba que no se cumplió ni el condicional del "if" ni el del "else, pero si el del "else if", por eso se ejecutó ese bloque en específico.
+
+Otro ejemplo
+
+```c
+#include <stdio.h>
+
+int main(){
+    
+    int valor1 = -25;
+    int valor2 = 5; 
+
+    if (valor1  > valor2){
+        printf("El valor %d es mayor que el valor %d", valor1,valor2);
+    }
+    else if (valor1 < valor2){
+        printf("El valor %d es menor que el valor %d", valor1, valor2);
+    }
+    else {
+        printf("El valor %d y %d son iguales", valor1, valor2);
+    }
+
+    return 0;
+}
+```
+
+Salida del código
+
+```
+El valor -25 es menor que el valor 5
+```
 
 ## 3.2.7) Condicional "switch"
 
+La función "switch" es bastante buena para cuando tenemos muchos condicionales presentes que busquemos analizar, esta función lo que hace es que va evaluando una expresión en los distintos casos que uno defina. 
+
+La sintaxis de este condicional es el siguiente:
+
+```c
+int variable = 3 // por ejemplo
+
+switch (variable) { // Acá decimos que queremos evaluar variable en los distintos casos
+    case 1:  // Cuando variable valga 1 se hace lo de abajo
+        // Bloque de código 1
+    case 2:  // Cuando variable valga 2 se hace lo de abajo
+        // Bloque de código 2
+    case 3:  // Cuando variable valga 3 se hace lo de abajo
+        // Bloque de código 3
+}
+
+// Como en el código pusimos que variable vale 3, entonces el código que está en el caso "3" sería el que se ejecute finalmente
+```
+
 ## 3.2.8) Ejemplos en codigo 
 
+```c
+#include <stdio.h>
 
+int main(){
+    int mes = 2;
+    switch (mes) {
+    case 1:
+        printf("El mes %d es enero", mes);
+        break;
+    case 2:
+        printf("El mes %d es febrero", mes);
+        break;
+    case 3:
+        printf("El mes %d es marzo", mes);
+        break;
+    case 4:
+        printf("El mes %d es abril", mes);
+        break;
+    case 5:
+        printf("El mes %d es mayo", mes);
+        break;
+    case 6:
+        printf("El mes %d es junio", mes);
+        break;
+    }
+}
+
+```
+
+Salida del código
+
+```
+El mes 2 es febrero
+```
+
+Otro ejemplo
+
+```c
+#include <stdio.h>
+
+int main(){
+    int dia = 5;
+    switch (dia) {
+    case 1:
+        printf("El dia %d es lunes", dia);
+        break;
+    case 2:
+        printf("El dia %d es martes", dia);
+        break;
+    case 3:
+        printf("El dia %d es miercoles", dia);
+        break;
+    case 4:
+        printf("El dia %d es jueves", dia);
+        break;
+    case 5:
+        printf("El dia %d es viernes", dia);
+        break;
+    case 6:
+        printf("El dia %d es sábado", dia);
+        break;
+    case 7:
+        printf("El dia %d es domingo", dia);
+        break;
+    }
+}
+
+```
+
+Salida del código
+
+```
+El dia 5 es viernes
+```
 
 # 4) Operaciones de asignacion
 
