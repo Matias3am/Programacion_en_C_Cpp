@@ -1,5 +1,6 @@
 # Operaciones aritmeticas en C
-## 1) Operaciones simples
+
+# 1) Operaciones simples
 
 ```
 + Suma
@@ -57,7 +58,7 @@ La división de ambos valores es:  1.250000
 El resto de ambos valores es:  1
 ```
 
-## 2) Operaciones de incremento / decremento
+# 2) Operaciones de incremento / decremento
 
 ```
 ++ Incremento de uno.
@@ -104,7 +105,7 @@ El valor de valor1 despues de disminuir es: 5
 El valor de valor2 despues de disminuir es: 4
 ```
 
-## 3) Operaciones relacionales
+# 3) Operaciones relacionales
 
 Este tipo de operaciones comparan 2 operandos
 
@@ -161,7 +162,149 @@ valor
 
 ![](https://github.com/Matias3am/Programacion_en_C_Cpp/blob/main/Imagenes/relacion.png)
 
-## 4) Operaciones de asignacion
+# 3.2) Condicionales 
+Los condicionales son funciones que ejecutan un bloque de código siempre que se cumplan los parametros que uno defina dentro de ellos. 
+
+## 3.2.1) Condicional "if"
+
+El condicionál **"if"** es uno de los condicionales más utilizados comunmente, la estructura de la sentencia if es: 
+
+```c
+if (condición){
+    // bloque de código a ejecutar
+}
+```
+
+Lo que indica este condicional es que si se cumple lo que se encuentre dentro del parentesis entonces se hara el bloque de codigo que se defina
+
+## 3.2.2) Ejemplos en código
+
+```c
+#include <stdio.h>
+
+int main(){
+    
+    int valor1 = 5;
+    int valor2 = 4;
+
+    if (valor1 > valor2) {
+        printf("El valor %d es mayor que %d", valor1,valor2);
+    }
+    
+    return 0;
+}
+```
+
+Salida del codigo
+
+```
+El valor 5 es mayor que 4
+```
+
+Otro ejemplo 
+
+```c
+#include <stdio.h>
+
+int main(){
+    
+    int valor1 = 5;
+    int valor2 = 4;
+
+    if (valor1 != valor2) {
+        printf("El valor %d es distinto que el valor %d", valor1,valor2);
+    }
+    
+    return 0;
+}
+```
+
+Salida del codigo
+
+```
+El valor 5 es distinto que el valor 4
+```
+
+## 3.2.3) Condicional "else"
+Este condicional generalmente va de la mano con la sentencia **"if"** e indica que si el primer condicional no se cumple, entonces realizara lo que se defina dentro del else para cualquiera de los demas casos que no sean el del **"if"**.
+
+Su estructura es la siguiente:
+```c
+if (condicional){
+    // Bloque de codigo
+}
+else  {
+    // Segundo bloque de codigo
+}
+```
+
+## 3.2.4) Ejemplos en codigo 
+
+```c
+#include <stdio.h>
+
+int main(){
+    
+    int valor1 = 5;
+    int valor2 = 5;
+
+    if (valor1 != valor2){
+        printf("El valor %d es distinto que el valor %d", valor1,valor2);
+    }
+    else {
+        printf("El valor %d y el valor %d son iguales", valor1, valor2);
+    }
+
+    return 0;
+}
+```
+
+Salida del codigo
+
+```
+El valor 5 y el valor 5 son iguales
+```
+
+Aqui podemos ver que el primer condicional no se cumplio ya que ambos valores son iguales, por eso la salida que se ejecuto fue la del "else"
+
+Otro ejemplo
+
+```c
+#include <stdio.h>
+
+int main(){
+    
+    int valor1 = 5;
+    int valor2 = 4;
+
+    if (valor1 < valor2){
+        printf("El valor %d es menor que el valor %d", valor1,valor2);
+    }
+    else {
+        printf("El valor %d es mayor que el valor %d", valor1, valor2);
+    }
+
+    return 0;
+}
+```
+
+Salida del codigo
+
+```
+El valor 5 es mayor que el valor 4
+```
+
+## 3.2.5) Condicional "else if"
+
+## 3.2.6) Ejemplos en codigo 
+
+## 3.2.7) Condicional "switch"
+
+## 3.2.8) Ejemplos en codigo 
+
+
+
+# 4) Operaciones de asignacion
 
 ```
 ----> Caso 1
