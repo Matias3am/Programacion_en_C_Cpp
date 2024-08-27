@@ -1,6 +1,7 @@
 # Programación en C / C++
 
 Este repositorio abarca material de estudio, respaldo de clases y también actividades del semestre.
+
 Esto para acompañar el aprendizaje de los lenguajes que se espera, puedan aprender en la asignatura.
 
 
