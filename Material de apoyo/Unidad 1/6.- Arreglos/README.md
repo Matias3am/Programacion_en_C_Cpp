@@ -37,7 +37,7 @@ Salida del código:
 El primer valor del array es: 1
 ```
 
-Es importante tener en consideracion que la posicion de los valores en el arreglo no se empiezan a contar desde (1..2..3..4,etc) , si no desde el 0 en adelante.
+Es importante tener en consideración que la posición de los valores en el arreglo no se empiezan a contar desde (1..2..3..4,etc) , si no, desde el 0 en adelante.
 
 
 En el siguiente ejemplo utilizaremos el ciclo "for" para imprimir todos los valores dentro de un array de dimension conocida :
@@ -67,7 +67,7 @@ El valor arreglo[5] es : 6
 El valor arreglo[6] es : 7
 ```
 
-Otro ejemplo definiendo un maximo de valores y asignando valores 
+Otro ejemplo definiendo un tamaño del arreglo y asignando valores a este ultimo.
 
 ```c
 #include <stdio.h>
@@ -100,11 +100,11 @@ El valor array[3] es: 7
 ```
 # 2) Tamaño de los arreglos 
 
-Para saber el tamaño en bytes de un arreglo podemos utilizar la funcion sizeof() , la cual nos entregara el (peso del tipo de dato * camtidad de datos en el array), por ejemplo si definimos un array que almacene numeros enteros (4 bytes de peso ) y guardamos 5 valores en el array, entonces obtendriamos 5*4 = 20 bytes de memoria. 
+Para saber el tamaño en bytes de un arreglo podemos utilizar la funcion sizeof() , la cual nos entregará el (peso del tipo de dato * camtidad de datos en el array), por ejemplo si definimos un array que almacene números enteros (4 bytes de peso ) y guardamos 5 valores en el array, entonces obtendriamos 5*4 = 20 bytes de memoria. 
 
 ## 2.1) Ejemplos en código
 
-Aqui te muestro lo mismo que dije antes en codigo:
+Aquí te muestro lo mismo que dije antes en codigo:
 
  ```c
 #include <stdio.h>
@@ -118,13 +118,13 @@ int main(){
 }
  ```
 
-Salida del codigo 
+Salida del código: 
 
 ```
 El tamaño total del arreglo es 20 bytes
 ```
 
-Entonces con esta funcion a consideracion, ¿ Como puedo recorrer un array sin saber cuantos datos hay en el ?, simplemente usando la formula: 
+Entonces con esta función a consideración, ¿ Como puedo recorrer un array sin saber cuantos datos hay en el ?, simplemente usando la formula: 
 
 ```c
 sizeof(arreglo)/sizeof(arreglo[0])
@@ -134,9 +134,9 @@ sizeof(arreglo)/sizeof(arreglo[0])
 sizeof(arreglo)/sizeof("tipo de dato: (int,float,etc)");
 ```
 
-Lo de arriba se traduce simplemente a que si dividimos el peso total del array por el peso de 1 dato nos dara la cantidad de datos totales que hay en este mismo.
+Lo de arriba se traduce a que si dividimos el peso total del array por el peso de 1 dato del array o del tipo de dato que contiene el array, nos dará la cantidad de datos totales que hay en este mismo.
 
-Veamos un ejemplo en donde definire un array con varios numeros y quiero imprimir la cantidad de datos que hay en el:
+Veamos un ejemplo en donde definiré un array con varios numeros y buscaré imprimir la cantidad de datos que hay en el:
 
 ```c
 #include <stdio.h>
@@ -151,14 +151,14 @@ int main(){
 }
 ```
 
-Salida del codigo:
+Salida del código:
 
 ```
 El arreglo tiene 10 datos dentro de si mismo
 El arreglo tiene 10 datos dentro de si mismo
 ```
 
-Utilice las 2 formas que te mostre antes y ambas dieron el mismo resultado, que el array contiene 10 datos precisamente. 
+Utilicé las 2 formas que te mostré antes y ambas dieron el mismo resultado, que el array contiene 10 datos precisamente. 
 
 Ahora ocupemos esta tecnica para recorrer un array de cantidad de datos desconocidos:
 
@@ -180,7 +180,7 @@ int main(){
 }
 ```
 
-Salida del codigo:
+Salida del código:
 
 ```
 El arreglo pesa 52 bytes en total
@@ -200,11 +200,11 @@ El dato arreglo[11] es : 121
 El dato arreglo[12] es : 234
 ```
 
-Podemos ver que el codigo descubrio de manera exitosa la cantidad de datos que habian en el arreglo y tambien recorrio cada uno de estos datos imprimiendo sus valores con la formula que te dije con anterioridad.
+Podemos ver que el codigo descubrió de manera exitosa la cantidad de datos que habian en el arreglo y tambien recorrió cada uno de estos datos imprimiendo sus valores con la formula que te dije con anterioridad.
 
 # 3) Arreglos multidimensionales 
 
-En los ejemplos anteriores trabajamos con Arreglo en 2d , pero tambien podemos hacer arreglos que contengan mas de 1 dimension.
+En los ejemplos anteriores trabajamos con Arreglo en 2d , pero tambien podemos hacer arreglos que contengan mas de 1,2 o 3 dimensiones.
 
 Por ejemplo para crear una matriz de 2x2: 
 
@@ -235,18 +235,18 @@ int main(){
 ```
 
 
-Salida del codigo:
+Salida del código:
 
 ```
 4
 ```
 
-Puede que sea medio confuso al principio, pero tienes que entender que las declaraciones se hacen como normalmente las entendemos , por ejemplo si hacemos esto arreglo[3][2] significa que estamos declarando una matriz de 3 filas y 2 columnas, pero al querer recorrer o ver que valores se encuentran en ellas, tenemos que considerar que el array parte desde el 0 , osea que si quisiesemos ver el valor de la segunda fila , primera columna tendriamos que ver arreglo[1][0]
+Puede que sea medio confuso al principio, pero tienes que entender que las declaraciones se hacen como normalmente las entendemos , por ejemplo si hacemos esto: arreglo[3][2] significa que estamos declarando una matriz de 3 filas y 2 columnas, pero al querer recorrer o ver que valores se encuentran en ella, tenemos que considerar que el array parte desde el 0 , osea que si quisiesemos ver el valor de la segunda fila / primera columna tendriamos que dirigirnos a arreglo[1][0]
 
 
 ## 3.1) Ejemplos en código 
 
-Aqui te dejo algunos ejemplos para recorrer una matriz de mas de 1 dimension:
+Aqui te dejo algunos ejemplos para recorrer una matriz de mas de 1 dimensión:
 
 
 ```c
@@ -266,7 +266,7 @@ int main(){
 }
 ```
 
-Salida del codigo:
+Salida del código:
 
 ```
 El valor del arreglo[0][0] es : 9 
@@ -294,7 +294,7 @@ int main(){
 }
 ```
 
-Salida del codigo 
+Salida del código: 
 
 ```
 El valor del arreglo[0][0] es : 91 
