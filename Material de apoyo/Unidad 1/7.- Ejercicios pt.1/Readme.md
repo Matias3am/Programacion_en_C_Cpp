@@ -1,4 +1,5 @@
 # 1. Sentencias y Tipos de Datos
+
 * Ejercicio 1: Escribe un programa que solicite al usuario el radio de un círculo como un número flotante.
 Luego, calcula y muestra el área del círculo utilizando la fórmula A = πr². Usa #define para definir el valor de π y emplea el tipo de dato float.
 
@@ -7,6 +8,7 @@ La fórmula de conversión es F = (C * 9/5) + 32. El programa debe solicitar al 
 utilizando el tipo de dato float.
 
 # 2. Condicionales (if-else, switch)
+
 * Ejercicio 3: Escribe un programa que pida al usuario que ingrese un número entero. 
 Usa una sentencia if-else para determinar si el número es par o impar y muestra el resultado correspondiente.
 
@@ -23,6 +25,7 @@ hasta N usando un bucle for. Muestra el resultado final.
 Muestra el resultado. Por ejemplo, el factorial de 5 es 5! = 5 × 4 × 3 × 2 × 1 = 120.
 
 # 4. Funciones
+
 * Ejercicio 7: Escribe una función llamada max que tome dos números enteros como parámetros y devuelva el mayor de ellos.
 Luego, escribe un programa principal que solicite al usuario dos números y use la función max para mostrar cuál es el mayor.
 
@@ -30,8 +33,9 @@ Luego, escribe un programa principal que solicite al usuario dos números y use 
 Usa esta función en un programa que pida al usuario un número entero y muestre si es primo o no.
 
 # 5. Arreglos
-Ejercicio 9: Escribe un programa que solicite al usuario que ingrese 5 números flotantes en un arreglo. 
+
+* Ejercicio 9: Escribe un programa que solicite al usuario que ingrese 5 números flotantes en un arreglo. 
 Luego, calcula el promedio de esos números y muestra el resultado.
 
-Ejercicio 10: Crea un programa que pida al usuario que ingrese 10 números enteros en un arreglo. Luego, solicita al usuario que ingrese 
+* Ejercicio 10: Crea un programa que pida al usuario que ingrese 10 números enteros en un arreglo. Luego, solicita al usuario que ingrese 
 un número entero para buscar en el arreglo. El programa debe indicar si el número se encuentra en el arreglo y en qué posición (índice).
