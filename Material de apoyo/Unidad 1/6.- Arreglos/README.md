@@ -98,11 +98,13 @@ El valor array[1] es: 27
 El valor array[2] es: 13
 El valor array[3] es: 7
 ```
-# Tamaño de los arreglos 
+# 2) Tamaño de los arreglos 
 
 Para saber el tamaño en bytes de un arreglo podemos utilizar la funcion sizeof() , la cual nos entregara el (peso del tipo de dato * camtidad de datos en el array), por ejemplo si definimos un array que almacene numeros enteros (4 bytes de peso ) y guardamos 5 valores en el array, entonces obtendriamos 5*4 = 20 bytes de memoria. 
 
- Aqui te lo muestro en codigo:
+## 2.1) Ejemplos en código
+
+Aqui te muestro lo mismo que dije antes en codigo:
 
  ```c
 #include <stdio.h>
@@ -200,4 +202,111 @@ El dato arreglo[12] es : 234
 
 Podemos ver que el codigo descubrio de manera exitosa la cantidad de datos que habian en el arreglo y tambien recorrio cada uno de estos datos imprimiendo sus valores con la formula que te dije con anterioridad.
 
-# Arreglos multidimensionales 
+# 3) Arreglos multidimensionales 
+
+En los ejemplos anteriores trabajamos con Arreglo en 2d , pero tambien podemos hacer arreglos que contengan mas de 1 dimension.
+
+Por ejemplo para crear una matriz de 2x2: 
+
+```c
+int arreglo[2][2] = { {9,7}, {2,4} };
+```
+
+![](https://github.com/Matias3am/Programacion_en_C_Cpp/blob/main/Imagenes/matriz.png)
+
+Para acceder a los valores de la matriz se ocupa la misma nomenclatura que antes: 
+
+```c
+#include <stdio.h>
+
+int main(){
+    int arreglo[2][2] = { {9,7}, {2,4} };
+    
+    int valor = arreglo[1][1];
+
+    /* Recordar que los arreglos parten del 0 
+       Así que si quisiese ver el valor 2 de la columna 2
+       tendria que imprimir el arreglo[1][1]*/
+
+    printf("%d", valor); // Deberia verse el valor 4
+
+    return 0;
+}
+```
+
+
+Salida del codigo:
+
+```
+4
+```
+
+Puede que sea medio confuso al principio, pero tienes que entender que las declaraciones se hacen como normalmente las entendemos , por ejemplo si hacemos esto arreglo[3][2] significa que estamos declarando una matriz de 3 filas y 2 columnas, pero al querer recorrer o ver que valores se encuentran en ellas, tenemos que considerar que el array parte desde el 0 , osea que si quisiesemos ver el valor de la segunda fila , primera columna tendriamos que ver arreglo[1][0]
+
+
+## 3.1) Ejemplos en código 
+
+Aqui te dejo algunos ejemplos para recorrer una matriz de mas de 1 dimension:
+
+
+```c
+#include <stdio.h>
+
+int main(){
+    int arreglo[2][2] = { {9,7}, {2,4} };
+    
+    int i, j;
+    for (i=0; i<2; i++){
+        for (j=0; j<2; j++){
+            printf("El valor del arreglo[%d][%d] es : %d \n", i,j, arreglo[i][j]);
+        }
+    }
+
+    return 0;
+}
+```
+
+Salida del codigo:
+
+```
+El valor del arreglo[0][0] es : 9 
+El valor del arreglo[0][1] es : 7 
+El valor del arreglo[1][0] es : 2 
+El valor del arreglo[1][1] es : 4 
+```
+
+Otro ejemplo:
+
+```c
+#include <stdio.h>
+
+int main(){
+    int arreglo[4][3] = { {91,77,103}, {22,44,55}, {5,31,27}, {12,34,21} };
+    
+    int i, j;
+    for (i=0; i<4; i++){
+        for (j=0; j<3; j++){
+            printf("El valor del arreglo[%d][%d] es : %d \n", i,j, arreglo[i][j]);
+        }
+    }
+
+    return 0;
+}
+```
+
+Salida del codigo 
+
+```
+El valor del arreglo[0][0] es : 91 
+El valor del arreglo[0][1] es : 77 
+El valor del arreglo[0][2] es : 103 
+El valor del arreglo[1][0] es : 22 
+El valor del arreglo[1][1] es : 44 
+El valor del arreglo[1][2] es : 55 
+El valor del arreglo[2][0] es : 5 
+El valor del arreglo[2][1] es : 31 
+El valor del arreglo[2][2] es : 27 
+El valor del arreglo[3][0] es : 12 
+El valor del arreglo[3][1] es : 34 
+El valor del arreglo[3][2] es : 21 
+```
