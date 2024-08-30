@@ -90,7 +90,7 @@ int main(){
 ```
 
 
-Salida del codigo:
+Salida del código:
 
 ```
 El valor array[0] es: 40
@@ -100,7 +100,7 @@ El valor array[3] es: 7
 ```
 # 2) Tamaño de los arreglos 
 
-Para saber el tamaño en bytes de un arreglo podemos utilizar la funcion sizeof() , la cual nos entregará el (peso del tipo de dato * camtidad de datos en el array), por ejemplo si definimos un array que almacene números enteros (4 bytes de peso ) y guardamos 5 valores en el array, entonces obtendriamos 5*4 = 20 bytes de memoria. 
+Para saber el tamaño en bytes de un arreglo podemos utilizar la funcion sizeof() , la cual nos entregará el (peso del tipo de dato * cantidad de datos en el array), por ejemplo si definimos un array que almacene datos del tipo int (4 bytes de peso ) y guardamos 5 valores en el array, entonces obtendriamos 5*4 = 20 bytes de memoria. 
 
 ## 2.1) Ejemplos en código
 
