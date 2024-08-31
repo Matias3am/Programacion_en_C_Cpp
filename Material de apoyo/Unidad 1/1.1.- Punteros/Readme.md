@@ -24,10 +24,10 @@ leer porque deja claro que estamos definiendo un puntero al tipo de dato.
 
 int main(){
     int valor = 4;
-    printf("La direccion de mmemoria del valor es: %p\n", &valor);
+    printf("La direccion de memoria del valor es: %p\n", &valor);
 
     int* ptr_valor = &valor;
-    printf("La direccion de mmemoria asignada al puntero: %p\n", ptr_valor);
+    printf("La direccion de memoria asignada al puntero: %p\n", ptr_valor);
     
     return 0;
 }
@@ -36,8 +36,8 @@ int main(){
 Sálida del código:
 
 ```
-La direccion de mmemoria del valor es: 000000000061fe24
-La direccion de mmemoria asignada al puntero: 000000000061fe24
+La direccion de memoria del valor es: 000000000061fe24
+La direccion de memoria asignada al puntero: 000000000061fe24
 ```
 
 En el ejemplo anterior se puede observar que el puntero ahora tiene dentro de sí mismo la dirección de memoria de *"valor"*, ahora te podras preguntar:
