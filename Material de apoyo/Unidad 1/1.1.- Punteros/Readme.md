@@ -44,12 +44,11 @@ En el ejemplo anterior se puede observar que el puntero ahora tiene dentro de s�
 
 ¿Pero para que me sirve trabajar con punteros en vez de hacerlo directo?
 
-La respuesta rapida seria "optimizacion", por ahora quedate con que si el programa sabe la direccion del valor puede llegar e ir altiro hacia el mismo y operar en torno a el. Sin punteros, el programa tendría que buscar en todas partes para encontrar lo que necesita.
+La respuesta rápida es optimización. Si el programa conoce la dirección de un valor, puede acceder directamente a él y operar sobre él. Sin punteros, el programa tendría que buscar en todas partes para encontrar lo que necesita.
 
+Es como si le dijeras a una persona: “Oye, necesito que vayas a buscarme algo a esta dirección”. La persona sabrá inmediatamente hacia dónde dirigirse. Pero si le dices: “Oye, necesito que me busques algo”, la persona no tendrá idea de dónde ir y tendrá que buscar en todos los lugares posibles. En el primer caso, se ahorra mucho tiempo, mientras que en el segundo caso, puede tardar mucho más.
 
-Por ejemplo, es como si a una persona le dijera: "Oye necesito que vayas a buscarme algo a esta direccion", la persona sabra inmediatamente hacia donde dirigirse, pero si le dijese "Oye necesito que me busques algo", la persona no tendra idea donde tiene que ir y tendra que ir lugar por lugar hasta llegar, en el caso 1 se ahorra muchisimo tiempo, en cambio en el segundo caso se puede llegar a tardar harto.
-
-Retomando el ejemplo anterior, podemos referenciar el valor a traves del puntero de la siguiente forma: 
+Retomando el ejemplo anterior, podemos referenciar el valor a través del puntero de la siguiente forma: 
 
 ```c
 #include <stdio.h>
@@ -95,7 +94,7 @@ int main(){
 }
 ```
 
-Salida del codigo 
+Salida del código:
 
 ```
 El valor dentro de la variable es: 4
