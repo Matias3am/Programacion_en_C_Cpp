@@ -17,8 +17,9 @@ int main(Parametros a recibir o no){
 };
 ```
 
-Las funciones del tipo int/float,etc permiten el almacenar los valores resultantes de las acciones hechas, en cambio aquellas que estan hechas con "void" 
-solamente permiten ejecutar mas no guardar en alguna variable los resultados.
+## Tipos de funciónes:
+* **Funciones con retorno:** Estas funciones, como int, float, etc., permiten almacenar los valores resultantes de las acciones realizadas.
+* **Funciones sin retorno (void):** Estas funciones solo ejecutan acciones pero no guardan los resultados en ninguna variable.
 
 ## Ejemplos en código (Sin retorno)
 
