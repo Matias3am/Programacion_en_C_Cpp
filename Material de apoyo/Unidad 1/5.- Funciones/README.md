@@ -1,4 +1,4 @@
-# Funciones
+# 1) Funciones
 Las funciónes son bloques de código que realizan labores definidas por el usuario, estas pueden ejecutar acciones en base a parametros que el usuario
 puede ingresar en ellos o simplemente hacer algo en específico sin más.
 
@@ -17,11 +17,11 @@ int main(Parametros a recibir o no){
 };
 ```
 
-## Tipos de funciónes:
+## 1.1) Tipos de funciónes:
 * **Funciones con retorno:** Estas funciones, como int, float, etc., permiten almacenar los valores resultantes de las acciones realizadas.
 * **Funciones sin retorno (void):** Estas funciones solo ejecutan acciones pero no guardan los resultados en ninguna variable.
 
-## Ejemplos en código (Sin retorno)
+## 1.2) Ejemplos en código (Sin retorno)
 
 ```c
 #include <stdio.h>
@@ -67,7 +67,7 @@ int main(){
 La multiplicacion de 5 y 4 es: 20
 ```
 
-## Ejemplos en código (Con retorno)
+## 1.3) Ejemplos en código (Con retorno)
 
 ```c
 #include <stdio.h>
