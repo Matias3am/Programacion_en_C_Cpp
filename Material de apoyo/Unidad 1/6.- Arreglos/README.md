@@ -1,6 +1,5 @@
 # 1) Arreglos
-Los arreglos son utilizados para almacenar multiples valores dentro de una variable, esto para evitar tener que definir e iniciar cada valor 
-por separado en su variable respectiva, aquí agrupamos todo eso en un solo lugar. 
+Los arreglos se utilizan para almacenar múltiples valores en una sola variable. Esto evita tener que definir e inicializar cada valor por separado.
 
 La sintaxis para definir un arreglo es la siguiente: 
 
@@ -10,13 +9,14 @@ La sintaxis para definir un arreglo es la siguiente:
 int arreglo[] = {1,2,3,4,5,6,7};
 ```
 
-Como visualizaste lo primero es definir el tipo de dato que va a almacenar el arreglo, luego hay que definir el nombre del *"array"* a la par que entre corchetes
-se determina el tamaño (cantidad de datos) que va almacenar nuestro arreglo, en el caso de no tener claro cuantos datos va almacenar simplemente se deja el espacio
-vacio y este se irá acomodando a la cantidad de datos que ingresen al array.
+## 1.1) Pasos para definir un arreglo 
 
-Para declarar qué valores irán dentro del array hay que ubicarlos entre llaves como en el ejemplo anterior. 
+* **Tipo de dato:** Define el tipo de dato que almacenará el arreglo (por ejemplo, int para enteros).
+* **Nombre del arreglo:** Asigna un nombre al arreglo.
+* **Tamaño del arreglo:** Entre corchetes [], especifica el tamaño del arreglo (cantidad de elementos). Si no sabes cuántos elementos tendrá, deja los corchetes vacíos y el tamaño se ajustará automáticamente según los datos que ingreses.
+* **Asignación de valores:** Para declarar qué valores irán dentro del array hay que ubicarlos entre llaves "{}" como en el ejemplo anterior. 
 
-## 1.1) Ejemplos en código
+## 1.2) Ejemplos en código
 
 Para poder acceder a los componentes de un array simplemente hacemos lo siguiente:
 
@@ -37,8 +37,7 @@ Salida del código:
 El primer valor del array es: 1
 ```
 
-Es importante tener en consideración que la posición de los valores en el arreglo no se empiezan a contar desde (1..2..3..4,etc) , si no, desde el 0 en adelante.
-
+Las posiciones en un arreglo comienzan desde 0, no desde 1. Por lo tanto, el primer elemento está en la posición 0, el segundo en la posición 1, y así sucesivamente.
 
 En el siguiente ejemplo utilizaremos el ciclo "for" para imprimir todos los valores dentro de un array de dimension conocida :
 
@@ -100,7 +99,9 @@ El valor array[3] es: 7
 ```
 # 2) Tamaño de los arreglos 
 
-Para saber el tamaño en bytes de un arreglo podemos utilizar la funcion sizeof() , la cual nos entregará el (peso del tipo de dato * cantidad de datos en el array), por ejemplo si definimos un array que almacene datos del tipo int (4 bytes de peso ) y guardamos 5 valores en el array, entonces obtendriamos 5*4 = 20 bytes de memoria. 
+Para saber el tamaño en bytes de un arreglo, podemos usar la función sizeof(). Esta función nos da el tamaño total del arreglo en memoria, calculado como el tamaño del tipo de dato multiplicado por la cantidad de elementos en el arreglo.
+
+Por ejemplo, si definimos un arreglo de tipo int (que ocupa 4 bytes) y guardamos 5 valores en él, el tamaño total será (5 * 4 = 20) bytes.
 
 ## 2.1) Ejemplos en código
 
@@ -204,7 +205,7 @@ Podemos ver que el codigo descubrió de manera exitosa la cantidad de datos que 
 
 # 3) Arreglos multidimensionales 
 
-En los ejemplos anteriores trabajamos con Arreglo en 2d , pero tambien podemos hacer arreglos que contengan mas de 1,2 o 3 dimensiones.
+En los ejemplos anteriores trabajamos con Arreglo en 2d , pero tambien podemos hacer arreglos que contengan mas de 1, 2 o 3 dimensiones.
 
 Por ejemplo para crear una matriz de 2x2: 
 
@@ -214,7 +215,7 @@ int arreglo[2][2] = { {9,7}, {2,4} };
 
 ![](https://github.com/Matias3am/Programacion_en_C_Cpp/blob/main/Imagenes/matriz.png)
 
-Para acceder a los valores de la matriz se ocupa la misma nomenclatura que antes: 
+Para acceder a los elementos de una matriz, usamos la misma notación que para los arreglos unidimensionales, pero con dos índices: uno para las filas y otro para las columnas.
 
 ```c
 #include <stdio.h>
