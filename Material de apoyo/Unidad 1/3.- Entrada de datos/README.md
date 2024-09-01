@@ -4,11 +4,12 @@ Si queremos ingresar o pedirle al usuario que ingrese datos del tipo Int, Float,
 
 La sintaxis de la función scanf() es la siguiente: 
 
-|---> scanf("%d o %f o %c", &variable);
+```c
+scanf("%d o %f o %c", &variable);
+```
 
 Si te diste cuenta tiene una sintaxis similar a la del printf(), en donde primero tenemos que definir el tipo de variable que vamos a leer por la terminal
 y posteriormente darle la dirección (&) de la variable a la que queremos asignarle ese valor, esto por requerimientos de la función
-
 
 Generalmente la lógica detras de esto seguiría un patron algo así: 
 
