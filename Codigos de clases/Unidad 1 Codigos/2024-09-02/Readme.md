@@ -1,7 +1,7 @@
 
 # Clase del 2 de Septiembre
 
-Este repositorio contiene el código revisado en la clase del 2 de Septiembre. En esta clase, se revisaron operadores lógicos y bit a bit en C, así como el uso de la función `printf` para imprimir resultados.
+Este repositorio contiene el código revisado en la clase del 2 de septiembre. En esta clase, se revisaron operadores lógicos y bit a bit en C, así como el uso de la función `printf` para imprimir resultados.
 
 ## Descripción del Código
 
@@ -58,7 +58,7 @@ int main(){
 
 # Continuación clase 2 de Septiembre
 
-Este repositorio contiene el código revisado en la clase del 21 de agosto. En esta clase, se revisó el uso de argumentos de línea de comandos y la función `sscanf` para analizar direcciones IP en C.
+Este repositorio contiene el código revisado en la clase del 2 de septiembre. En esta clase, se revisó el uso de argumentos de línea de comandos y la función `sscanf` para analizar direcciones IP en C.
 
 ## Descripción del Código
 
