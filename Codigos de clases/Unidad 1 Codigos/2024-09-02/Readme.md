@@ -101,4 +101,14 @@ int main(int argc, char **argv){
   
   return 0;
 }
+```
 
+## Instrucciones
+Para compilar y ejecutar el código, sigue estos pasos:
+
+* Abre una terminal y navega al directorio donde se encuentra el archivo main.c.
+* Compila el código utilizando el compilador gcc:
+    * gcc -o main main.c
+
+* Ejecuta el programa pasando una dirección IP y una máscara como argumentos:
+    * ./main 192.168.1.1 255.255.255.0
