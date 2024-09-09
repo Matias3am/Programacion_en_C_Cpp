@@ -1,7 +1,7 @@
 
 # Clase del 28 de agosto
 
-Este repositorio contiene el código revisado en la clase del 21 de agosto. En esta clase, se revisó el uso de la función `sizeof` para determinar el tamaño de diferentes tipos de datos y variables en C, así como la impresión de valores en diferentes formatos.
+Este repositorio contiene el código revisado en la clase del 28 de agosto. En esta clase, se revisó el uso de la función `sizeof` para determinar el tamaño de diferentes tipos de datos y variables en C, así como la impresión de valores en diferentes formatos.
 
 ## Descripción del Código
 
