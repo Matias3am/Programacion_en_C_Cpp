@@ -1,7 +1,7 @@
 
 # Clase del 26 de agosto
 
-Este repositorio contiene la extensión del código revisado en la clase del 21 de agosto. En esta clase, se revisó el uso de la función `main` con parámetros y el uso básico de la función `printf`.
+Este repositorio contiene la extensión del código revisado en la clase del 26 de agosto. En esta clase, se revisó el uso de la función `main` con parámetros y el uso básico de la función `printf`.
 
 ## Descripción del Código
 
