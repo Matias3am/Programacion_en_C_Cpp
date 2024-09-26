@@ -30,9 +30,9 @@ git config --global user.name " tu nombre "
 git config --global user.email " tu correo (ojalá el mismo de tu cuenta github) "
 ```
 
-Ahora te sugerí el usar la powershell o el git bash porque crearemos nuestro ambiente de trabajo utilizando algunos comandos típicos de bash/linux/terminal, si no tienes familiaridad con linux no te preocupes, te daré los 4 comandos necesarios para moverte dentro del ambiente de trabajo en la terminal: 
+Ahora te sugerí el usar la powershell o el git bash porque crearemos nuestro ambiente de trabajo utilizando algunos comandos típicos de bash/linux/terminal, si no tienes familiaridad con el bash/terminal no te preocupes, te daré los 5 comandos necesarios para moverte en el sistema: 
 
-### 1.2.- Comandos linux básicos
+### 1.2.- Comandos Bash / Shell básicos
 
 * ls : Este comando lo que hace es mostrarte todas las carpetas y archivos actuales en donde te encuentras
   
