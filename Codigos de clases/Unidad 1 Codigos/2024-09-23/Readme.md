@@ -105,9 +105,9 @@ int main(int argc, char**argv){
 Compila el programa con gcc:
 
 ```console
-gcc -o factorial_ref_calculator factorial_ref_calculator.c
+gcc -o calculadora_factorial_ref calculadora_factorial_ref.c
 # Ejecuta el programa con un número entero positivo como argumento:
-./factorial_ref_calculator 5
+./calculadora_factorial_ref 5
 ```
 
 # Clase del 23 de septiembre 2.c
@@ -156,7 +156,7 @@ int main(int argc, char**argv){
 Compila el programa con gcc:
 
 ```console
-gcc -o division_calculator division_calculator.c
+gcc -o calculadora_division calculadora_division.c
 # Ejecuta el programa con dos números enteros como argumentos:
-./division_calculator 10 3
+./calculadora_division 10 3
 ```
