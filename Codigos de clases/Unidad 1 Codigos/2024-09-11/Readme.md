@@ -75,7 +75,7 @@ int main(int argc, char**argv){
 Compila el programa con gcc:
 
 ```console
-gcc -o factorial_calculator factorial_calculator.c
+gcc -o calculadora_factorial calculadora_factorial.c
 # Ejecuta el programa:
-./factorial_calculator
+./calculadora_factorial
 ```
