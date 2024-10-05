@@ -94,9 +94,9 @@ int main(int argc, char **argv){
 Compila el programa con gcc:
 
 ```console
-gcc -o ipv4_calculator ipv4_calculator.c
+gcc -o ipv4_calculadora ipv4_calculadora.c
 # Ejecuta el programa con una dirección IP y una máscara de subred:
-./ipv4_calculator 192.168.1.1 255.255.255.0
+./ipv4_calculadora 192.168.1.1 255.255.255.0
 ```
 
 # Clase del 9 de septiembre 2.c
@@ -162,9 +162,9 @@ int main(int argc, char **argv){
 Compila el programa con gcc:
 
 ```console
-gcc -o ipv4_struct_union ipv4_struct_union.c
+gcc -o ipv4_estructura_union ipv4_estructura_union.c
 # Ejecuta el programa:
-./ipv4_struct_union
+./ipv4_estructura_union
 ```
 
 A diferencia del caso anterior, aquí se definen las direcciones dentro del mismo código y no usando ingreso de datos a través de la terminal
