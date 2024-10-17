@@ -136,7 +136,7 @@ En este ejemplo se creara un archivo .txt que contenga 1000 numeros generados al
 #include <time.h> // Libreria para randomizar mejor la función rand()
 
 
-int numero_azar(){ // Funcion para generar datos al azar del 1 al 1000 enteros
+int numero_azar(){ // Funcion para generar datos al azar entre 1 a 15000 en formato int/enteros
     int numero = (rand() % 15000) + 1 ;
     return numero;
 };
