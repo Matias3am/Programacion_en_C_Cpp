@@ -147,7 +147,7 @@ int main (){
     fileptr = fopen("ejemplo.txt", "w"); // Abrir archivo en modo escritura
     srand(time(NULL)); // Función para que se generen datos al azar en cada ejecución del código 
 
-    /* Sin la función anterior rand() generará los mismo valores dentro de un minuto de tiempo 
+    /* Sin la función anterior, rand() generará los mismo valores dentro de un minuto de tiempo 
        Osea que si mi código lo ejecuto 3 veces a las 12:00 de la tarde, mientras no sean las 
        12:01 el programa me generará los mismo valores siempre, haciendo time(NULL) nos aseguramos
        que sean los valores al azar independiente del tiempo de ejecución
