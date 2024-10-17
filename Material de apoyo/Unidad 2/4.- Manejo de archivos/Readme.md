@@ -145,6 +145,12 @@ int main (){
     int i; // Inicializar contador
     FILE *fileptr; // Inicializar referencia a un archivo
     fileptr = fopen("ejemplo.txt", "w"); // Abrir archivo en modo escritura
+
+    if (fileptr == NULL) {
+        perror("Error al abrir el archivo");
+        return -1;
+    }
+
     srand(time(NULL)); // Función para que se generen datos al azar en cada ejecución del código 
 
     /* Sin la función anterior, rand() generará los mismo valores dentro de un minuto de tiempo 
