@@ -92,8 +92,7 @@ if (filePointer == NULL) {
 
 # 2.- Ejemplo 1
 
-Ejemplo Completo
-A continuación se muestra un ejemplo completo que abre un archivo, escribe en él, lo cierra, 
+A continuación se muestra un ejemplo que abre un archivo, escribe en él, lo cierra, 
 lo abre de nuevo para leer y finalmente lo cierra.
 
 ```c
@@ -125,4 +124,41 @@ int main() {
 
     fclose(filePointer);
     return 0;
+```
+
+# Ejemplo 2
+
+En este ejemplo se creara un archivo .txt que contenga 1000 numeros generados al azar
+
+```c
+#include <stdio.h> // Libreria estandar
+#include <stdlib.h> // Libreria para usar función rand()
+#include <time.h> // Libreria para randomizar mejor la función rand()
+
+
+int numero_azar(){ // Funcion para generar datos al azar del 1 al 1000 enteros
+    int numero = (rand() % 15000) + 1 ;
+    return numero;
+};
+
+int main (){
+    int i; // Inicializar contador
+    FILE *fileptr; // Inicializar referencia a un archivo
+    fileptr = fopen("ejemplo.txt", "w"); // Abrir archivo en modo escritura
+    srand(time(NULL)); // Función para que se generen datos al azar en cada ejecución del código 
+
+    /* Sin la función anterior rand() generará los mismo valores dentro de un minuto de tiempo 
+       Osea que si mi código lo ejecuto 3 veces a las 12:00 de la tarde, mientras no sean las 
+       12:01 el programa me generará los mismo valores siempre, haciendo time(NULL) nos aseguramos
+       que sean los valores al azar independiente del tiempo de ejecución
+    */
+
+    for (i = 0; i <= 1000; i++) // Ciclo for para generar 100 datos
+    {
+        fprintf(fileptr,"%d\n", numero_azar()); // Función para escribir datos en formato "numero y ,"
+    }
+    
+    fclose(fileptr); // Cerramos el archivo ( Se recomienda siempre hacerlo)
+    return 0;
+}
 ```
