@@ -109,6 +109,6 @@ int main() {
 
 ---
 
-## 1.2.- Conclusión
+## 1.1.- Conclusión
 Las librerías en C son herramientas fundamentales que simplifican el desarrollo de programas al proporcionar funciones reutilizables. Es importante conocer las librerías más utilizadas para optimizar el código y resolver problemas comunes con eficiencia.
 
