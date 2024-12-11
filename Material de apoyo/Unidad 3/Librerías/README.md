@@ -5,7 +5,7 @@ Las librerías en C son colecciones de funciones y macros predefinidas que puede
 1. **Librerías estáticas**: El código de la librería se copia al programa ejecutable durante la compilación.
 2. **Librerías dinámicas**: El código de la librería se carga en tiempo de ejecución, reduciendo el tamaño del ejecutable.
 
-## 1.1.- Ejemplo 1: Uso de `math.h`
+## Ejemplo 1: Uso de `math.h`
 La librería `math.h` proporciona funciones matemáticas avanzadas como senos, cosenos, logaritmos, entre otros.
 
 ```c
@@ -33,7 +33,7 @@ int main() {
 
 ---
 
-## 1.2.- Ejemplo 2: Uso de `string.h`
+## Ejemplo 2: Uso de `string.h`
 La librería `string.h` contiene funciones para manipular cadenas de texto.
 
 ```c
@@ -71,7 +71,7 @@ int main() {
 
 ---
 
-## 1.3.- Ejemplo 3: Uso de `stdlib.h`
+## Ejemplo 3: Uso de `stdlib.h`
 La librería `stdlib.h` proporciona funciones generales como conversión de cadenas a números, asignación de memoria dinámica y más.
 
 ```c
@@ -109,6 +109,6 @@ int main() {
 
 ---
 
-## 1.4.- Conclusión
+## 1.2.- Conclusión
 Las librerías en C son herramientas fundamentales que simplifican el desarrollo de programas al proporcionar funciones reutilizables. Es importante conocer las librerías más utilizadas para optimizar el código y resolver problemas comunes con eficiencia.
 
