@@ -1,0 +1,15 @@
+# Versión mínima de Cmake
+cmake_minimum_required(VERSION 3.20)
+
+# Nombre del proyecto
+project(EjemploConLibrerias LANGUAGES CXX)
+
+# Establecer el estándar de C++
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
+
+# Incluir los directorios con los archivos de cabecera
+include_directories(libraries)
+
+# Crear el ejecutable
+add_executable(EjemploConLibrerias src/programa.cpp libraries/pedir_valores.cpp libraries/encontrar_maximo.cpp)
