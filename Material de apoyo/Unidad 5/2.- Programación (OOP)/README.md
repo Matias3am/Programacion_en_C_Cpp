@@ -244,5 +244,5 @@ Si te diste cuenta, en todos los ejemplos se utilizó algo llamado:
 using namespace std; 
 ```
 
-El cual dentro de algunas funciones que tiene, permite que los códigos sean mes verbosos, se explicará mas detalles de esto en el siguiente
+El cual dentro de algunas funciones que tiene, permite que los códigos sean menos verbosos, se explicará mas detalles de esto en el siguiente
 documento.
